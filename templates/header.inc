@@ -19,10 +19,10 @@
     <a href="/"><img src="/images/gdc-two-moons-small.png" alt="GDC Project Revived" width="200px"></a>
   </center>
   <ul class="nav navbar-default nav-justified">
-    <li><a href="http://gdcproject.org">home</a></li>
-    <li><a href="http://gdcproject.org/contributing">contributing</a></li>
-    <li><a href="http://gdcproject.org/downloads">downloads</a></li>
-    <li><a href="http://gdcproject.org/documentation">documentation</a></li>
+    <li><a href="http://staging.dgnu.org">home</a></li>
+    <li><a href="http://staging.dgnu.org/contributing">contributing</a></li>
+    <li><a href="http://staging.dgnu.org/downloads">downloads</a></li>
+    <li><a href="http://staging.dgnu.org/documentation">documentation</a></li>
     <li><a href="http://bugzilla.gdcproject.org">bugs</a></li>
     <li><a href="https://github.com/D-Programming-GDC/GDC">current&nbsp;git</a></li>
     <li><a href="http://forum.dlang.org/group/D.gnu">mailing&nbsp;lists</a></li>

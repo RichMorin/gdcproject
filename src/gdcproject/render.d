@@ -65,7 +65,7 @@ string renderPage(string path, string function(string) read, bool nocache = fals
     scope(failure) goto Lnocache;
 
     RedisClient rc = connectRedis("127.0.0.1");
-    RedisDatabase rdb = rc.getDatabase(0);
+    RedisDatabase rdb = rc.getDatabase(1);
     string content = rdb.get!string(path);
     rc.quit();
 
@@ -98,7 +98,7 @@ void waitForViewChanges()
     if (watcher.readChanges(changes, 0.seconds))
     {
       RedisClient rc = connectRedis("127.0.0.1");
-      RedisDatabase rdb = rc.getDatabase(0);
+      RedisDatabase rdb = rc.getDatabase(1);
 
       foreach (change; changes)
       {
@@ -174,7 +174,7 @@ void buildCache()
   scope(failure) return;
 
   RedisClient rc = connectRedis("127.0.0.1");
-  RedisDatabase rdb = rc.getDatabase(0);
+  RedisDatabase rdb = rc.getDatabase(1);
 
   // Build all markdown pages.
   auto de = dirEntries("views", "*.md", SpanMode.depth, false);
